@@ -1,0 +1,17 @@
+.tour {
+    color: black; 
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;  
+
+    &__fechas {
+        align-items: center;
+    }
+    &__link {color: red;
+        align-items: center; 
+        
+    }
+}

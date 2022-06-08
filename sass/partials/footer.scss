@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 192px;
+    
+    &__img{
+        height: 60px;
+        padding-right: 50px;
+    }
+    
+    &__nombre{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;    
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__ul{
+        display: flex;
+        justify-content: right;
+    }
+}

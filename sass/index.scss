@@ -1,0 +1,20 @@
+/*externos*/
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+/*misc*/
+@import './misc/normalize.scss';
+@import './misc/variables.scss';
+@import './misc/mediaqueries.scss';
+
+/*partials*/
+@import './partials/header.scss';
+@import './partials/footer.scss';
+
+/*pages*/
+@import './pages/home.scss';
+@import './pages/discografia.scss';
+@import './pages/galeria.scss';
+@import './pages/tour.scss';
+@import './pages/contacto.scss';
+
+

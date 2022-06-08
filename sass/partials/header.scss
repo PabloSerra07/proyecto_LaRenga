@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+.nav{ width: 70%;}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li{list-style: none;}
+
+a{
+    text-decoration: none;
+    color: white;
+}

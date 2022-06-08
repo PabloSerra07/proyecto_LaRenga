@@ -1,0 +1,27 @@
+.discografia { 
+            color: black;
+            padding: 80px;
+    &__titulo {display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    &__tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 50px;
+    }
+    &__img {
+        justify-content: center;
+        width: 207px;
+        height: 209;
+        
+    }
+}    
+.img__discografia:hover { 
+    width: 350px;
+    height: 350px;
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(360deg);            
+}
