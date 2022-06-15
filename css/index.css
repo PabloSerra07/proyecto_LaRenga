@@ -1,82 +1,26 @@
 /*externos*/
 @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 /*misc*/
 * {
   padding: 0;
   margin: 0; }
 
-body {
-  font-family: 'Coming Soon', cursive; }
+html {
+  font-size: 62.5; }
 
-@media screen and (max-width: 1200px) {
-  .grid {
-    display: flex;
-    flex-direction: column; }
-  .grid__img {
-    max-width: 100%;
-    width: 200px; } }
-
-@media screen and (max-width: 992px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center; }
-  .centro {
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10px; }
-  .discografia__tarjetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding-top: 50px; }
-  .tour {
-    color: black;
-    text-align: justify;
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 600px) {
-  .header__logo {
-    max-width: 100%;
-    width: 300px; }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    height: 100px;
-    font-size: 15px; }
-  li {
-    font-size: 10px; }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10px;
-    width: 100%; }
-  .contacto__formulario {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center; } }
-
+/*espaciados*/
+/*fuentes-letras*/
+/* colores*/
 /*partials*/
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: black;
-  align-items: center; }
+  align-items: center;
+  font-family: "Coming Soon", cursive;
+  display: flex;
+  background-color: black; }
 
 .nav {
   width: 70%; }
@@ -91,7 +35,25 @@ li {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  font-size: 1em; }
+
+@media screen and (max-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center; }
+  li {
+    font-size: .6em; } }
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    max-width: 100%;
+    width: 300px; }
+  li {
+    font-size: .5em; } }
 
 .footer {
   display: flex;
@@ -99,8 +61,8 @@ a {
   background-color: black;
   height: 192px; }
   .footer__img {
-    height: 60px;
-    padding-right: 50px; }
+    height: 6em;
+    padding-right: 5em; }
   .footer__nombre {
     display: flex;
     justify-content: space-around;
@@ -113,6 +75,17 @@ a {
     display: flex;
     justify-content: right; }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 100px;
+    font-size: 1em; }
+  .footer__nombre {
+    font-size: .8em; } }
+
 /*pages*/
 .centro {
   color: black;
@@ -122,6 +95,14 @@ a {
   padding: 10px; }
   .centro__info {
     padding-top: 150px; }
+
+@media screen and (max-width: 992px) {
+  .centro {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; } }
 
 .discografia {
   color: black;
@@ -137,6 +118,7 @@ a {
     gap: 40px;
     padding-top: 50px; }
   .discografia__img {
+    font-family: "Kanit", sans-serif;
     justify-content: center;
     width: 207px;
     height: 209; }
@@ -146,6 +128,22 @@ a {
   height: 350px;
   transition: width 2s, height 2s, transform 2s;
   transform: rotate(360deg); }
+
+@media screen and (max-width: 992px) {
+  .discografia__tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px; } }
+
+@media screen and (max-width: 992px) {
+  .discografia__tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px; } }
 
 .grid {
   display: grid;
@@ -196,19 +194,35 @@ a {
     grid-column: 6 / 8;
     grid-row: 4; }
 
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grid__img {
+    max-width: 100%;
+    width: 200px; } }
+
 .tour {
   color: black;
   text-align: justify;
   display: flex;
   flex-direction: row;
-  padding: 20px;
   justify-content: space-evenly;
-  align-items: center; }
-  .tour__fechas {
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly; }
+  .tour__fechas, .tour__link {
     align-items: center; }
   .tour__link {
-    color: red;
-    align-items: center; }
+    color: red; }
+
+@media screen and (max-width: 992px) {
+  .tour {
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column; } }
 
 .contacto {
   display: flex;
@@ -226,3 +240,20 @@ a {
   align-items: center;
   padding-top: 150px;
   font-size: 30px; }
+
+@media screen and (max-width: 600px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    width: 100%; }
+  .contacto__formulario {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center; } }
