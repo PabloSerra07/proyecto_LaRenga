@@ -1,5 +1,5 @@
 .discografia { 
-            color: black;
+            color: map-get($colores, primario );
             padding: 80px;
     &__titulo {display: flex;
         justify-content: center;
@@ -13,10 +13,10 @@
         padding-top: 50px;
     }
     &__img {
+        font-family: $alternativa;
         justify-content: center;
         width: 207px;
-        height: 209;
-        
+        height: 209;        
     }
 }    
 .img__discografia:hover { 
@@ -25,3 +25,21 @@
     transition: width 2s, height 2s, transform 2s;
     transform: rotate(360deg);            
 }
+@media screen and (max-width: 992px){
+    .discografia__tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px;}
+    }
+@media screen and (max-width: 992px) {
+    .discografia__tarjetas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-top: 50px;
+        }
+}
+    

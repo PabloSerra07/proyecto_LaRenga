@@ -62,3 +62,11 @@
         grid-row:  4 ;
     } 
 }
+@media screen and (max-width: 1200px) {
+    .grid {display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .grid__img {max-width: 100%;
+        width: 200px}
+}

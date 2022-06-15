@@ -3,7 +3,7 @@
     flex-direction: row;
     
     &__formulario {
-        background-color: black;
+        background-color: map-get($colores, primario );
         width: 50%;
         display: flex;
         justify-content: flex-start;
@@ -12,8 +12,30 @@
 .formulario {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: map-get($colores, secundario );
     align-items: center;
     padding-top: 150px;
     font-size: 30px;
 }
+@media screen and (max-width: 600px) {
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        width: 100%;
+        }
+        .contacto__formulario {
+            background-color: map-get($colores, primario );
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }    
+        
+    
+} 

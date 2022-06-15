@@ -1,9 +1,9 @@
 header{
+    @include flex(row,space-between, center);
+    font-family: $principal;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
+    background-color: map-get($colores, primario);
+    
 }
 .nav{ width: 70%;}
 
@@ -17,5 +17,21 @@ li{list-style: none;}
 
 a{
     text-decoration: none;
-    color: white;
+    color: map-get($colores, secundario );
+    font-size: 1em;
 }
+@media screen and (max-width: 992px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: map-get($colores, primario );
+        align-items: center;}
+        li {font-size: .6em;}
+}
+@media screen and (max-width: 600px) {
+    .header__logo { max-width: 100%;
+        width: 300px;}
+    li {font-size: .5em;}
+}
+    

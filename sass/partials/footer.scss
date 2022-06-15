@@ -1,19 +1,19 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: map-get($colores, primario );
     height: 192px;
     
     &__img{
-        height: 60px;
-        padding-right: 50px;
+        height: 6em;
+        padding-right: 5em;
     }
     
     &__nombre{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        color: white;    
+        color: map-get($colores, secundario)    
     }
     &__nav{
         display: flex;
@@ -25,3 +25,14 @@
         justify-content: right;
     }
 }
+@media screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: map-get($colores, primario );
+        height: 100px;
+        font-size: 1em;
+    }
+    .footer__nombre{font-size: .8em;}
+}    

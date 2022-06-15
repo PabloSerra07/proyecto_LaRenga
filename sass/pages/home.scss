@@ -1,5 +1,5 @@
 .centro {
-    color: black; 
+    color: map-get($colores, primario ); 
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -9,3 +9,12 @@
         padding-top:150px;
     }
 }
+@media screen and (max-width: 992px) {
+    .centro {
+            color: map-get($colores, primario ); 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;  
+        }   
+    }

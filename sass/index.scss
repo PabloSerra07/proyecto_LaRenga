@@ -1,10 +1,11 @@
 /*externos*/
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 /*misc*/
 @import './misc/normalize.scss';
 @import './misc/variables.scss';
-@import './misc/mediaqueries.scss';
+@import './misc/mixins.scss';
+// @import './misc/mediaqueries.scss';
 
 /*partials*/
 @import './partials/header.scss';
