@@ -1,7 +1,9 @@
 .discografia { 
             color: map-get($colores, primario );
             padding: 80px;
-    &__titulo {display: flex;
+    &__titulo {
+        font-family: $titulos;
+        display: flex;
         justify-content: center;
         padding-bottom: 40px;
     }
@@ -13,7 +15,7 @@
         padding-top: 50px;
     }
     &__img {
-        font-family: $alternativa;
+        font-family: $parrafos;
         justify-content: center;
         width: 207px;
         height: 209;        

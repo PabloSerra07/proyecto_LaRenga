@@ -1,6 +1,7 @@
 /*externos*/
 @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 /*misc*/
 * {
   padding: 0;
@@ -8,6 +9,11 @@
 
 html {
   font-size: 62.5; }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr  auto;
+  min-height: 100vh; }
 
 /*espaciados*/
 /*fuentes-letras*/
@@ -64,9 +70,12 @@ a {
     height: 6em;
     padding-right: 5em; }
   .footer__nombre {
+    font-family: "Patrick Hand", cursive;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    padding-left: 1em;
     color: white; }
   .footer__nav {
     display: flex;
@@ -74,6 +83,11 @@ a {
   .footer__ul {
     display: flex;
     justify-content: right; }
+  .footer__link {
+    opacity: 0%;
+    font-size: 2em;
+    position: absolute;
+    padding-top: 1%; }
 
 @media screen and (max-width: 600px) {
   .footer {
@@ -84,7 +98,11 @@ a {
     height: 100px;
     font-size: 1em; }
   .footer__nombre {
-    font-size: .8em; } }
+    font-size: .8em; }
+  __link {
+    font-size: 2em;
+    position: absolute;
+    padding-top: 2%; } }
 
 /*pages*/
 .centro {
@@ -92,9 +110,21 @@ a {
   text-align: center;
   display: flex;
   flex-direction: row;
-  padding: 10px; }
+  padding: 10px;
+  align-items: center; }
   .centro__info {
     padding-top: 150px; }
+  .centro__titulo {
+    padding: 5%; }
+
+.titulo__principal {
+  font-size: 2.5em;
+  padding-bottom: 7%;
+  font-family: "Permanent Marker", cursive; }
+
+.titulo__parrafo {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2em; }
 
 @media screen and (max-width: 992px) {
   .centro {
@@ -108,6 +138,7 @@ a {
   color: black;
   padding: 80px; }
   .discografia__titulo {
+    font-family: "Permanent Marker", cursive;
     display: flex;
     justify-content: center;
     padding-bottom: 40px; }
@@ -118,7 +149,7 @@ a {
     gap: 40px;
     padding-top: 50px; }
   .discografia__img {
-    font-family: "Kanit", sans-serif;
+    font-family: "Patrick Hand", cursive;
     justify-content: center;
     width: 207px;
     height: 209; }
@@ -194,7 +225,16 @@ a {
     grid-column: 6 / 8;
     grid-row: 4; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20%; }
+  __img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 768px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -213,33 +253,100 @@ a {
   padding: 20px;
   justify-content: space-evenly; }
   .tour__fechas, .tour__link {
-    align-items: center; }
+    align-items: center;
+    padding: 5em; }
   .tour__link {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.5em;
+    padding-left: 2em;
     color: red; }
+  .tour__titulo {
+    font-family: "Permanent Marker", cursive;
+    padding-bottom: 2em; }
+  .tour__parrafos {
+    font-family: "Patrick Hand", cursive;
+    font-size: 2em; }
 
 @media screen and (max-width: 992px) {
   .tour {
     color: black;
     text-align: justify;
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    font-size: 1em; } }
+
+@media screen and (max-width: 768px) {
+  .tour {
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: .3em; } }
+
+@media screen and (max-width: 600px) {
+  .tour {
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: .1em;
+    font-size: .5em; } }
+
+@media screen and (max-width: 375px) {
+  .tour {
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: .1em;
+    font-size: .4em; } }
 
 .contacto {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: black; }
   .contacto__formulario {
     background-color: black;
-    width: 50%;
+    width: 30%;
     display: flex;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    align-items: stretch; }
+  .contacto__formulario--1 {
+    width: 60%; }
+  .contacto__boton {
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    font-family: "Permanent Marker", cursive;
+    font-size: .5em;
+    background-color: #630b0f; }
 
 .formulario {
   display: flex;
   flex-direction: column;
   color: white;
-  align-items: center;
   padding-top: 150px;
-  font-size: 30px; }
+  font-family: "Patrick Hand", cursive;
+  font-size: 2em;
+  justify-content: space-between;
+  align-items: stretch; }
+
+@media screen and (max-width: 992px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    width: 100%; }
+  .contacto__formulario {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center; } }
 
 @media screen and (max-width: 600px) {
   .contacto {

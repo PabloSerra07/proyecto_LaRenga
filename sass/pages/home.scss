@@ -1,14 +1,29 @@
+
 .centro {
     color: map-get($colores, primario ); 
     text-align: center;
     display: flex;
     flex-direction: row;
-    padding: 10px;  
+    padding: 10px;
+    align-items: center;  
     
     &__info {
         padding-top:150px;
     }
+    &__titulo{
+        padding: 5%;
+    }
 }
+.titulo__principal {
+    font-size: 2.5em;
+    padding-bottom: 7%;
+    font-family: $titulos;
+}
+.titulo__parrafo { 
+    font-family: $parrafos;
+    font-size: 1.2em;
+}    
+
 @media screen and (max-width: 992px) {
     .centro {
             color: map-get($colores, primario ); 

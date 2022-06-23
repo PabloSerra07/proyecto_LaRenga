@@ -8,20 +8,62 @@
 
     &__fechas {
         align-items: center;
+        padding: 5em;
     }
     &__link {
+        font-family: $titulos;
+        font-size: 1.5em;
+        padding-left: 2em;
         @extend .tour__fechas;
         color: map-get($colores, terciario );
-        
-        
+    }
+    &__titulo{
+        font-family: $titulos;
+        padding-bottom: 2em;
+    }
+    &__parrafos{
+        font-family: $parrafos;
+        font-size: 2em; 
     }
 }
+
 @media screen and (max-width: 992px) {
     .tour {
             color: map-get($colores, primario ); 
             text-align: justify;
             display: flex;
-            flex-direction: column; 
-        }
+            flex-direction: column;
+            font-size: 1em; 
+            }
+        
+        
     }
-    
+@media screen and (max-width: 768px) {
+    .tour {
+            color: map-get($colores, primario ); 
+            text-align: justify;
+            display: flex;
+            flex-direction: column; 
+            padding: .3em;
+            }
+    }
+@media screen and (max-width: 600px) {
+    .tour {
+            color: map-get($colores, primario ); 
+            text-align: justify;
+            display: flex;
+            flex-direction: column; 
+            padding: .1em;
+            font-size: .5em;
+            }
+    }    
+@media screen and (max-width: 375px) {
+    .tour {
+            color: map-get($colores, primario ); 
+            text-align: justify;
+            display: flex;
+            flex-direction: column; 
+            padding: .1em;
+            font-size: .4em;
+            }
+    }                             
